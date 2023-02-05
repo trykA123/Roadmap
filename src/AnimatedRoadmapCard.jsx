@@ -4,11 +4,11 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 1 } },
-  hidden: { opacity: 0, scale: 1, x: 300 },
+  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 1.5 } },
+  hidden: { opacity: 0, scale: 1, x: 100 },
 };
 
-const Div = ({ info }) => {
+const AnimatedRoadmapCard = ({ info }) => {
   const control = useAnimation();
   const [ref, inView] = useInView();
 
@@ -22,13 +22,13 @@ const Div = ({ info }) => {
   return (
     <div>
       <motion.div
-        className="mb-6 rounded-lg border-2 border-teal-300 p-5"
+        className="mr-2 mb-4 rounded-md border-2 border-violet-700 p-2 text-base hover:border-yellow-300 lg:mb-6 lg:rounded-lg lg:border-2 lg:border-teal-300 lg:p-5 lg:hover:border-violet-800 "
         ref={ref}
         variants={boxVariant}
         initial="hidden"
         animate={control}
       >
-        <h6 className="static mr-0 flex min-w-fit max-w-full justify-start py-4 px-5 text-base font-light text-white">
+        <h6 className="static mr-2 flex min-w-fit max-w-full justify-start py-2 px-1 text-base font-light text-white lg:py-4 lg:px-5 lg:text-2xl">
           {info}
         </h6>
       </motion.div>
@@ -36,4 +36,4 @@ const Div = ({ info }) => {
   );
 };
 
-export default Div;
+export default AnimatedRoadmapCard;
