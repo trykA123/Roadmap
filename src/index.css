@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+}
+
+@font-face {
+  font-family: "OrbitronBlack";
+  src: url("../src/fonts/Orbitron-Black.ttf");
+}
+
+@font-face {
+  font-family: "OrbitronBold";
+  src: url("../src/fonts//Orbitron-Bold.ttf");
+}
+
+@font-face {
+  font-family: "OrbitronRegular";
+  src: url("../src/fonts/Orbitron-Regular.ttf");
+}
