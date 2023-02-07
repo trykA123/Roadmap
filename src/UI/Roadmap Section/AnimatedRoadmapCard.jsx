@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-const boxVariant = {
+let boxVariant = {
   visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 1.5 } },
   hidden: { opacity: 0, scale: 1, x: 100 },
 };
@@ -11,6 +11,14 @@ const boxVariant = {
 const AnimatedRoadmapCard = ({ info }) => {
   const control = useAnimation();
   const [ref, inView] = useInView();
+
+  const isMobile = window.innerWidth < 768;
+  if (isMobile) {
+    boxVariant = {
+      visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 1.5 } },
+      hidden: { opacity: 0, scale: 0.5, x: 0 },
+    };
+  }
 
   useEffect(() => {
     if (inView) {
@@ -22,7 +30,7 @@ const AnimatedRoadmapCard = ({ info }) => {
   return (
     <div>
       <motion.div
-        className="mr-2 mb-4 rounded-md border-2 border-violet-700 p-2 text-base hover:border-yellow-300 lg:mr-4 lg:mb-6 lg:w-[800px] lg:rounded-lg lg:border-2 lg:border-teal-300 lg:p-5 lg:hover:border-violet-800"
+        className="mr-2 mb-4 rounded-md border-2 border-violet-700 p-2 text-base hover:border-yellow-300 lg:mr-4 lg:mb-6 lg:max-w-[600px] lg:rounded-lg lg:border-2 lg:border-teal-300 lg:p-5 lg:hover:border-violet-800"
         ref={ref}
         variants={boxVariant}
         initial="hidden"

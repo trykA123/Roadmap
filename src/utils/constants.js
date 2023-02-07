@@ -45,65 +45,84 @@ const roles = {
   d: "developer",
   co: "co-founder",
   o: "operations",
+  m: "social media manager",
 };
 
 const hobbies = {
-  k: "knowledge seeker",
+  tryka: "knowledge seeker",
+  jorje: "Crypto enthusiast",
+  em: "Passion for crypto",
+  tarantulo: "storyteller",
+  vlad: "eSports Veteran",
+  simpleprick: "Digital Artist",
+  ali: "NFTs enthusiast",
 };
 
 const names = {
-  t: "trykA",
+  tryka: "trykA",
+  jorje: "jorje",
+  em: "em",
+  tarantulo: "tarantulo",
+  vlad: "x₿orisake",
+  simpleprick: "simpleprick",
+  ali: "ali",
 };
 
 export const members = {
+  tarantulo: {
+    role: roles.co,
+    hobby: hobbies.tarantulo,
+    name: names.tarantulo,
+    image:
+      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/2224.png",
+    twitter: "https://twitter.com/spacerobotsnft",
+  },
+  simpleprick: {
+    role: roles.co,
+    hobby: hobbies.simpleprick,
+    name: names.simpleprick,
+    image:
+      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/1111.png",
+    twitter: "https://twitter.com/spacerobotsnft",
+  },
+  vlad: {
+    role: roles.o,
+    hobby: hobbies.vlad,
+    name: names.vlad,
+    image:
+      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/5213.png",
+    twitter: "https://twitter.com/spacerobotsnft",
+  },
+  ali: {
+    role: roles.m,
+    hobby: hobbies.ali,
+    name: names.ali,
+    image:
+      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/1000.png",
+    twitter: "https://twitter.com/spacerobotsnft",
+  },
+  jorge: {
+    role: roles.d,
+    hobby: hobbies.jorje,
+    name: names.jorje,
+    image:
+      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/2344.png",
+    twitter: "https://twitter.com/spacerobotsnft",
+  },
   tryka: {
     role: roles.d,
-    hobby: hobbies.k,
-    name: names.t,
+    hobby: hobbies.tryka,
+    name: names.tryka,
     image:
       "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/4144.png",
     twitter: "https://twitter.com/spacerobotsnft",
   },
-  jorge: {
-    role: "developer",
-    hobby: "crypto enthusiast",
-    name: "jorje",
-    image:
-      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/2344.png",
-  },
   liviu: {
-    role: "developer",
-    hobby: "passion for crypto",
-    name: "em",
+    role: roles.d,
+    hobby: hobbies.em,
+    name: names.em,
     image:
       "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/1234.png",
-  },
-  tarantulo: {
-    role: "Co-founder",
-    hobby: "storyteller",
-    name: "tarantulo",
-    image:
-      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/2224.png",
-  },
-  vlad: {
-    role: "operations",
-    hobby: "esports Veteran",
-    name: "x₿orisake",
-    image:
-      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/5213.png",
-  },
-  simpleprick: {
-    role: "Co-founder",
-    hobby: "Digital Artist",
-    name: "Simpleprick",
-    image:
-      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/1111.png",
-  },
-  ali: {
-    role: "social media manager",
-    hobby: "nft enthusiast",
-    name: "Ali",
-    image:
-      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/1000.png",
+    twitter: "https://twitter.com/spacerobotsnft",
   },
 };
