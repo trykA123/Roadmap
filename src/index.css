@@ -6,6 +6,8 @@
   * {
     @apply box-border;
     @apply font-orbitronBlack;
+    @apply scroll-smooth;
+    @apply scroll-p-10;
   }
 }
 

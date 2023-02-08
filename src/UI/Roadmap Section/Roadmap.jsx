@@ -11,10 +11,7 @@ import {
 const Roadmap = () => {
   return (
     <div>
-      <section
-        id="Roadmap"
-        className="relative block min-h-0 font-orbitronBlack"
-      >
+      <section id="x" className="relative block min-h-0 font-orbitronBlack">
         <div className="mb-0 bg-black pb-0">
           <div className="mx-auto min-w-fit lg:max-w-6xl">
             <div className="relative flex flex-col flex-nowrap items-center justify-center pt-12">
