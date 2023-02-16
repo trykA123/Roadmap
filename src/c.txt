@@ -1,0 +1,59 @@
+<div className="ml-40 mt-20 grid grid-cols-3 gap-y-12">
+  <div className="h-12 max-w-xs rounded-2xl border-2"></div>
+  <div className="h-12 max-w-xs rounded-2xl border-2"></div>
+  <div className="h-12 max-w-xs rounded-2xl border-2"></div>
+  <div className="h-12 max-w-xs rounded-2xl border-2"></div>
+  <div className="h-12 max-w-xs rounded-2xl border-2"></div>
+  <div className="h-12 max-w-xs rounded-2xl border-2"></div>
+</div>;
+
+import React, { useState } from "react";
+import { members } from "../../utils/constants";
+import "../../../src/index.css";
+
+const Market = () => {
+  const [imageArray, setImageArray] = useState([
+    members.jorge.image,
+    members.liviu.image,
+    members.ali.image,
+    members.tarantulo.image,
+    members.tryka.image,
+  ]);
+
+  const handleImageClick = (index) => {
+    const imageCopy = [...imageArray];
+    const clickedImage = imageCopy[index];
+    imageCopy.splice(index, 1);
+    imageCopy.splice(2, 0, clickedImage);
+    setImageArray(imageCopy);
+  };
+
+  return (
+    <section className="relative block h-screen bg-black text-white">
+      <div className="container mx-auto mb-0 max-w-[80%] pb-0">
+        <h1 className="text-7xl text-white">Market</h1>
+        <div className="mx-auto grid h-96 grid-cols-5">
+          {imageArray.map((image, index) => (
+            <div
+              key={index}
+              onClick={() => handleImageClick(index)}
+              className={`${
+                index === 2
+                  ? "z-50 scale-100"
+                  : index > 2
+                  ? `z-${index - 2} translate-x-14 scale-100`
+                  : `translate-x-${(2 - index) * 32} scale-100`
+              } bg-cover transition-all duration-500 ${
+                index === 2 ? "delay-500" : "delay-250"
+              } hover:z-50 hover:translate-y-[-4rem] hover:scale-100 hover:blur-none`}
+            >
+              <img src={image} alt="" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Market;

@@ -5,8 +5,8 @@ import { members } from "../../utils/constants";
 const Team = () => {
   return (
     <div>
-      <section className="h-full bg-black">
-        <div className="container mx-auto px-6 py-10">
+      <section className="h-full bg-black" id="Team">
+        <div className="container mx-auto max-w-[80%] px-6 py-10">
           <h1 className="text-center text-2xl font-bold uppercase text-red-500 dark:text-white lg:text-4xl">
             Our Team
           </h1>

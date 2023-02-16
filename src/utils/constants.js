@@ -126,3 +126,44 @@ export const members = {
     twitter: "https://twitter.com/spacerobotsnft",
   },
 };
+
+export const explore = [
+  {
+    id: "slide-1",
+    imgURL:
+      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/1234.png",
+    title: "Space Robots",
+    pDescription: "Forge your path",
+    buttonLink: "https://xoxno.com/collection/SRC-27d8ff",
+  },
+  {
+    id: "slide-2",
+    imgURL:
+      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/1234.png",
+    title: "JollyPacks",
+    pDescription: "Get yourself a pack",
+    buttonLink: "https://xoxno.com/collection/SPACEROBOT-bfbf9d",
+  },
+  {
+    id: "slide-3",
+    imgURL:
+      "https://media.elrond.com/nfts/asset/QmZQqijux4mPMBEhHkairSZ1qPHFnwhwLdV2xb6hfmi8iA/HN-CraneBot.png",
+    title: "Robo Parts",
+    pDescription: "Fancy new parts?",
+    buttonLink: "https://xoxno.com/collection/SRP-ec2514",
+  },
+  {
+    id: "slide-4",
+    imgURL:
+      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/1234.png",
+    title: "Space Robots",
+    pDescription: "Forge your path",
+  },
+  {
+    id: "slide-5",
+    imgURL:
+      "https://media.elrond.com/nfts/asset/QmZgZj5TajS1fSJrX3x1QGPTP3skj6QLoFsaDJpFYt3AA8/1234.png",
+    title: "Space Robots",
+    pDescription: "Forge your path",
+  },
+];

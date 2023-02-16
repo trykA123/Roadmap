@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const WritingText = () => {
   const [text, setText] = useState("");
   const string =
-    "//: Upgradable NFT collection of 7777 randomly assembled 3D Robots";
+    "Space Robots NFTs are unique digital collectibles that represent a robotic explorer in the vast universe. These NFTs offer a glimpse into the future of space exploration, where robots are sent to faraway planets to gather data and unlock the secrets of the cosmos.";
 
   useEffect(() => {
     let index = 0;
@@ -13,12 +13,16 @@ const WritingText = () => {
       if (index > string.length) {
         clearInterval(interval);
       }
-    }, 100);
+    }, 20);
 
     return () => clearInterval(interval);
   }, []);
 
-  return <p className="min-h-[100px]">{text}</p>;
+  return (
+    <p className="hidden font-sans text-white md:block md:h-16 md:max-w-2xl md:text-base">
+      {text}
+    </p>
+  );
 };
 
 export default WritingText;
