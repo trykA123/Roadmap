@@ -26,7 +26,7 @@ const ExploreMarket = ({
         className="absolute h-full w-full rounded-md object-cover md:rounded-3xl"
       />
       {active !== id ? (
-        <h3 className="absolute z-0 text-[18px] font-semibold text-white sm:text-[26px] lg:bottom-20 lg:origin-[0,0] lg:rotate-[-90deg]">
+        <h3 className="absolute z-0 text-base font-semibold text-white sm:text-[26px] lg:bottom-28 lg:origin-[0,0] lg:rotate-[-90deg]">
           {title}
         </h3>
       ) : (
