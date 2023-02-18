@@ -1,19 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 import { tabs } from "../../utils/constants";
 
 const Content = ({ activeTab }) => {
   const activeContent = tabs.find((tab) => tab.id === activeTab);
-  const [showContent, setShowContent] = useState(false);
-
-  useEffect(() => {
-    setShowContent(true);
-  }, [activeTab]);
 
   return (
-    <div
-      className={`col-start-2 col-end-3 row-span-3 grid grid-cols-[75%_1fr] ${
-        showContent ? "opacity-100" : "opacity-0"
-      } transition-property-opacity transition-opacity duration-500`}
+    <motion.div
+      className="col-start-2 col-end-3 row-span-3 grid grid-cols-[75%_1fr]"
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1.5 }}
     >
       {activeContent.imgURL && (
         <div className="row-start-1 row-end-3 mx-auto flex items-center justify-center md:max-w-2xl lg:w-full lg:max-w-none">
@@ -37,7 +34,7 @@ const Content = ({ activeTab }) => {
           </h3>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

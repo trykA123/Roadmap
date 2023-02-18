@@ -36,7 +36,7 @@ const AnimatedRoadmapCard = ({ info }) => {
         initial="hidden"
         animate={control}
       >
-        <h6 className="static mr-2 flex min-w-fit max-w-full justify-start py-2 px-1 text-base font-light text-white lg:py-4 lg:px-5 lg:text-2xl">
+        <h6 className="static mr-2 flex min-w-fit max-w-full justify-start py-2 px-1 font-mono text-base font-light text-white lg:py-4 lg:px-5 lg:text-2xl">
           {info}
         </h6>
       </motion.div>
