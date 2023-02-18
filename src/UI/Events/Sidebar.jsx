@@ -3,18 +3,18 @@ import Button from "./Button";
 
 const Sidebar = ({ activeTab, setActiveTab }) => {
   return (
-    <div className="flex h-screen w-1/12 flex-col items-center justify-center">
+    <div className="flex h-screen w-full flex-col items-center justify-center">
       <Button isActive={activeTab === 1} onClick={() => setActiveTab(1)}>
-        Q1
+        Proxima Centauri
       </Button>
       <Button isActive={activeTab === 2} onClick={() => setActiveTab(2)}>
-        Q2
+        Proton Collider
       </Button>
       <Button isActive={activeTab === 3} onClick={() => setActiveTab(3)}>
-        Q3
+        Benta Nostrale
       </Button>
       <Button isActive={activeTab === 4} onClick={() => setActiveTab(4)}>
-        Q4
+        Lorem Ipsum
       </Button>
     </div>
   );

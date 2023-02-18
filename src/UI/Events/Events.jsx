@@ -10,7 +10,7 @@ const Events = () => {
       <div className="p-4 text-center text-7xl font-bold">Events</div>
       <div className="flex h-screen">
         <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
-        <div className="m-6 h-screen flex-1 p-4">
+        <div className="m-6 h-[80%] flex-1 p-4">
           <Content activeTab={activeTab} />
         </div>
       </div>

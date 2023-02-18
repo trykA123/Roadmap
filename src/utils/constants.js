@@ -5,6 +5,95 @@ export const titles = {
   addValueProp: "Added Value Proposition",
 };
 
+export const eventsImg = {
+  img1: "https://source.unsplash.com/1527pjeb6jg",
+  img2: "https://source.unsplash.com/phIFdC6lA4E",
+  img3: "https://source.unsplash.com/dR_q93lfaTw",
+  img4: "https://source.unsplash.com/rXVFCA3fQ4I",
+};
+
+export const eventsTitles = {
+  title1: "Welcome to our World",
+  title2: "Development features",
+  title3: "Take 3",
+  title4: "Here we go again",
+};
+
+export const eventsTags = {
+  tag1: "Space Robots",
+  tag2: "Take a shot",
+  tag3: "Promixa ",
+  tag4: "Take 4",
+};
+
+export const eventsDescription = {
+  description1:
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam fuga nemo ipsam iste aspernatur commodi assumenda dicta maxime, unde voluptatibus optio, deserunt beatae cupiditate, ad autem doloribus eligendi. Non, nulla!Consequuntur illo ipsa tenetur quod facilis, ratione quibusdam similique delectus cumque quidem eaque amet cupiditate illum, provident deserunt ad. Ratione omnis, necessitatibus mollitia dolorum veniam ad quo quis illum et?",
+  description2:
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam fuga nemo ipsam iste aspernatur commodi assumenda dicta maxime, unde voluptatibus optio, deserunt beatae cupiditate, ad autem doloribus eligendi. Non, nulla!Consequuntur illo ipsa tenetur quod facilis, ratione quibusdam similique delectus cumque quidem eaque amet cupiditate illum, provident deserunt ad. Ratione omnis, necessitatibus mollitia dolorum veniam ad quo quis illum et?",
+  description3:
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam fuga nemo ipsam iste aspernatur commodi assumenda dicta maxime, unde voluptatibus optio, deserunt beatae cupiditate, ad autem doloribus eligendi. Non, nulla!Consequuntur illo ipsa tenetur quod facilis, ratione quibusdam similique delectus cumque quidem eaque amet cupiditate illum, provident deserunt ad. Ratione omnis, necessitatibus mollitia dolorum veniam ad quo quis illum et?",
+  description4:
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam fuga nemo ipsam iste aspernatur commodi assumenda dicta maxime, unde voluptatibus optio, deserunt beatae cupiditate, ad autem doloribus eligendi. Non, nulla!Consequuntur illo ipsa tenetur quod facilis, ratione quibusdam similique delectus cumque quidem eaque amet cupiditate illum, provident deserunt ad. Ratione omnis, necessitatibus mollitia dolorum veniam ad quo quis illum et?",
+};
+
+export const eventsContent = {
+  content1: {
+    imgURL: eventsImg.img1,
+    title: eventsTitles.title1,
+    tag: eventsTags.tag1,
+    description: eventsDescription.description1,
+  },
+  content2: {
+    imgURL: eventsImg.img2,
+    title: eventsTitles.title2,
+    tag: eventsTags.tag2,
+    description: eventsDescription.description2,
+  },
+  content3: {
+    imgURL: eventsImg.img3,
+    title: eventsTitles.title3,
+    tag: eventsTags.tag3,
+    description: eventsDescription.description3,
+  },
+  content4: {
+    imgURL: eventsImg.img4,
+    title: eventsTitles.title4,
+    tag: eventsTags.tag4,
+    description: eventsDescription.description4,
+  },
+};
+
+export const tabs = [
+  {
+    id: 1,
+    title: eventsContent.content1.title,
+    description: eventsContent.content1.description,
+    imgURL: eventsContent.content1.imgURL,
+    tag: eventsContent.content1.tag,
+  },
+  {
+    id: 2,
+    title: eventsContent.content2.title,
+    description: eventsContent.content2.description,
+    imgURL: eventsContent.content2.imgURL,
+    tag: eventsContent.content2.tag,
+  },
+  {
+    id: 3,
+    title: eventsContent.content3.title,
+    description: eventsContent.content3.description,
+    imgURL: eventsContent.content3.imgURL,
+    tag: eventsContent.content3.tag,
+  },
+  {
+    id: 4,
+    title: eventsContent.content4.title,
+    description: eventsContent.content4.description,
+    imgURL: eventsContent.content4.imgURL,
+    tag: eventsContent.content4.tag,
+  },
+];
 export const firstRoadmapSection = {
   firstInfo: "Phase 1 complete - buyback of 25 EGLD from the market",
   secondInfo: "Phase 2 complete - 15X NFT airdropped to random wallets",

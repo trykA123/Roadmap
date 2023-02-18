@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -27,6 +28,9 @@ module.exports = {
         hero50: "rgba(7,7,7,0)",
         hero100: "rgba(7,7,7,0.57)",
         hero200: "rgba(7,7,7,1)",
+      },
+      gridTemplateColumns: {
+        20: "repeat(20, minmax(0, 1fr))",
       },
     },
   },
