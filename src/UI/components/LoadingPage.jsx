@@ -26,7 +26,7 @@ const LoadingPage = () => {
       style={styles}
     >
       <div className="text-white">
-        <p className="drop-shadow-5xl mb-8">
+        <p className="drop-shadow-5xl mb-8 text-2xl xl:text-8xl">
           <TypeAnimation
             sequence={[
               ".", // Types 'One'
@@ -40,7 +40,6 @@ const LoadingPage = () => {
             wrapper="div"
             cursor={true}
             repeat={0}
-            style={{ fontSize: "6rem" }}
           />
         </p>
       </div>

@@ -5,7 +5,7 @@ import { members } from "../../utils/constants";
 const Team = () => {
   return (
     <div>
-      <section className="h-[1200px] bg-slate-800" id="Team">
+      <section className="h-full bg-slate-800" id="Team">
         <div className="container mx-auto max-w-[90%] px-6 py-10">
           <h1 className="text-center text-2xl font-bold uppercase text-white lg:text-4xl">
             Our Team
@@ -16,7 +16,7 @@ const Team = () => {
                 return <TeamMember members={member} key={i} />;
               } else {
                 return (
-                  <TeamMember members={member} key={i} className={"mt-12"} />
+                  <TeamMember members={member} key={i} className={"mt-16"} />
                 );
               }
             })}
