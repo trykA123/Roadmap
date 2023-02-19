@@ -4,13 +4,14 @@ import Content from "./Content";
 
 const Events = () => {
   const [activeTab, setActiveTab] = useState(1);
-
   return (
-    <section className="flex h-full flex-col bg-black pr-[116px] pb-48 text-white">
-      <div className="p-4 text-center text-7xl font-bold">Events</div>
-      <div className="flex h-screen">
-        <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
-        <div className="m-6 h-[80%] flex-1 p-4">
+    <section className="h-[80vh] bg-black">
+      <div className="h-full overflow-hidden pb-24 pt-12">
+        <div className="mx-auto grid  h-full  grid-cols-[0.5fr_2fr] grid-rows-3 lg:max-w-[1600px]">
+          {/* Tab index component */}
+          <div className="row-span-3 hidden lg:col-start-1 lg:col-end-2 lg:mb-72 lg:flex lg:w-full lg:flex-col lg:items-center lg:justify-center lg:pr-12">
+            <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+          </div>
           <Content activeTab={activeTab} />
         </div>
       </div>

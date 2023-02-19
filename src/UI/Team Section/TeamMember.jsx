@@ -2,12 +2,14 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-const TeamMember = ({ members }) => {
+const TeamMember = ({ members, className }) => {
   return (
     <div>
-      <div className="group flex transform cursor-pointer flex-col items-center p-10 transition-colors duration-300">
+      <div
+        className={`group ${className} flex transform cursor-pointer flex-col items-center p-10 transition-colors duration-300`}
+      >
         <img
-          className="h-48 w-48 rounded-full object-cover duration-500 md:group-hover:h-64 md:group-hover:w-64"
+          className="h-48 w-48 object-cover duration-500 md:group-hover:h-64 md:group-hover:w-64"
           src={members.image}
           alt={members.name}
         />

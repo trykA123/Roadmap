@@ -9,7 +9,7 @@ export const eventsImg = {
   img1: "https://source.unsplash.com/1527pjeb6jg",
   img2: "https://source.unsplash.com/phIFdC6lA4E",
   img3: "https://source.unsplash.com/dR_q93lfaTw",
-  img4: "https://source.unsplash.com/rXVFCA3fQ4I",
+  img4: "https://source.unsplash.com/ln5drpv_ImI",
 };
 
 export const eventsTitles = {
@@ -159,6 +159,7 @@ const names = {
 
 export const members = {
   tarantulo: {
+    id: 1,
     role: roles.co,
     hobby: hobbies.tarantulo,
     name: names.tarantulo,
