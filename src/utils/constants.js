@@ -1,8 +1,8 @@
 export const titles = {
-  salesRoad: "Sales Roadmap",
-  projectDevelopment: "Development",
-  postLaunch: "Post Launch",
-  addValueProp: "Added Value Proposition",
+  Q1: "Q1 2023",
+  Q2: "Q2 2023",
+  Q3: "Q3 2023",
+  Q4: "Q4 2023",
 };
 
 export const eventsImg = {
@@ -94,40 +94,47 @@ export const tabs = [
     tag: eventsContent.content4.tag,
   },
 ];
+
 export const firstRoadmapSection = {
-  firstInfo: "Phase 1 complete - buyback of 25 EGLD from the market",
-  secondInfo: "Phase 2 complete - 15X NFT airdropped to random wallets",
+  firstInfo:
+    "Our new PHX Unlock is scheduled for Q1 release. Use this protocol to gain access to a special collection of RoboParts and unleash the full power of your PHX RoboPack.",
+  secondInfo:
+    "The redesigned user interface will provide an updated look and feel to better cater to today's standards, as well as enhanced capabilities for greater utilization. The project aims to give its users the best possible experience and make it easier for them to access the tools and services they need. The Website Upgrade is an integral part of such an endeavor.",
   thirdInfo:
-    "Public sale complete - 40,000 $ donation to charities picked by the community",
+    "The service will let people add breathtaking RoboParts to their Space Robots NFTs, which will play a significant role in improving your robot's competitiveness and aesthetics. The stats will be pivotal in the gamified Staking mechanism's new architecture. While the rarity of your RoboParts will ultimately determine where your robot stands in the rankings.",
   forthInfo:
-    "Bonus - for 1 week after public sale. 50 EGLD buybacks from the market",
+    "ΣLadder, a set of instruments that will enable users to plan their strategies and make better decisions for the Staking Seasons.",
 };
 
 export const secondRoadmapSection = {
-  firstInfo: "Upgradable NFTs - use robot parts to upgrade your Space Robot!",
-  secondInfo: "Staking - stake your Space Robot NFTs and earn robot parts",
-  thirdInfo: "Game release - codename: gc_space_miners",
-  forthInfo: "Future projects - building the Space Robots universe",
+  firstInfo:
+    "At this time, we'll be in the planning stages for ΣMining a new feature that will test users' expertise within our world. Previously named (Staking).",
+  secondInfo:
+    "The development of the Upgrading process is an essential milestone for the company this year. After months of hard work and dedication from the development team, the upgrading process will finally be completed and released. It's a significant step forward, as it will allow users to prepare themselves for the first Staking Season fully.",
+  thirdInfo:
+    "In Q2 ΣLadder will be released. This system will allow users to compare their Space Robots with those of other users and earn rewards for having the highest-ranked NFTs.",
+  forthInfo:
+    "A recent addition will let users take part in challenges and missions in the Space Robots Metaverse. More to be disclosed soon.",
 };
 
 export const thirdRoadmapSection = {
-  firstInfo: "Listing on Elrond NFT market places",
-  secondInfo: "Getting on Rarity Tools",
+  firstInfo:
+    "A ΣForge process will be launched in Q3. Redesigning your Space Robots using RoboParts to alter their performance stats while maintaining their visual appearance.",
+  secondInfo:
+    "In Q3, we will roll out a second sMission, bringing new challenges and rewards for the community.",
   thirdInfo:
-    "Space Robots Companion NFT drop (must hold 2x Space Robots (or2x RoboPacks))",
-  forthInfo: "Real-life art projects featuring Space Robots",
-  fifthInfo: "Collaborating with artists, brands, NFT projects",
+    "A new sharing option will be added to our DApp in the upcoming update, allowing users to access their NFT digital assets in different forms easily.",
+  forthInfo:
+    "At this stage, we are putting forth our full efforts through completing sMining, the component that will enable users to stake for rewards. The testing on Devnet will tentatively be released.",
 };
 
 export const forthRoadmapSection = {
   firstInfo:
-    "Holding Space Robots NFTs will earn you a membership in the Space Robots Club, giving you various benefits, allowing you to participate in SRC governance, and taking part in exclusive giveaways, NFT drops, and other events",
+    "The development of ΣMining will be completed and released in Q4. The participants can now compete against one another in a struggle for control over Gabma Centauri.",
   secondInfo:
-    "SRC DAO - Opportunities to participate in deciding on the future of the Space Robots",
+    "ΣConvert will be available for holders to trade in their scrappy Roboparts for better ones each season.",
   thirdInfo:
-    "Release of a comics series featuring stories from the Space Robots universe",
-  forthInfo:
-    "Discounts, memberships, and additional benefits in the feature Space Robots projects",
+    "For the time being, ΣData development is our focus. A new addition that will help users dominate the metagame by providing in-depth analyses and statistics over the whole Space Robots NFTs world.",
 };
 
 const roles = {

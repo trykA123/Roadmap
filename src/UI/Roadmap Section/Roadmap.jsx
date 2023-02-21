@@ -11,10 +11,7 @@ import {
 const Roadmap = () => {
   return (
     <div>
-      <section
-        id="Roadmap"
-        className="relative block min-h-0 font-orbitronBlack"
-      >
+      <section id="Roadmap" className="relative block min-h-0">
         <div className="mb-0 bg-black pb-0">
           <div className="mx-auto min-w-fit lg:max-w-[80%]">
             <div className="relative flex flex-col flex-nowrap items-center justify-center pt-12">
@@ -22,21 +19,21 @@ const Roadmap = () => {
                 <div className="fixed left-auto top-0 right-auto bottom-[40vh] -z-10 h-[40vh] w-[1px]"></div>
               </div>
               <Box
-                title={titles.salesRoad}
+                title={titles.Q1}
                 first={firstRoadmapSection.firstInfo}
                 second={firstRoadmapSection.secondInfo}
                 third={firstRoadmapSection.thirdInfo}
                 forth={firstRoadmapSection.forthInfo}
               />
               <Box
-                title={titles.projectDevelopment}
+                title={titles.Q2}
                 first={secondRoadmapSection.firstInfo}
                 second={secondRoadmapSection.secondInfo}
                 third={secondRoadmapSection.thirdInfo}
                 forth={secondRoadmapSection.forthInfo}
               />
               <Box
-                title={titles.postLaunch}
+                title={titles.Q3}
                 first={thirdRoadmapSection.firstInfo}
                 second={thirdRoadmapSection.secondInfo}
                 third={thirdRoadmapSection.thirdInfo}
@@ -44,7 +41,7 @@ const Roadmap = () => {
                 fifth={thirdRoadmapSection.fifthInfo}
               />
               <Box
-                title={titles.addValueProp}
+                title={titles.Q4}
                 first={forthRoadmapSection.firstInfo}
                 second={forthRoadmapSection.secondInfo}
                 third={forthRoadmapSection.thirdInfo}
