@@ -15,7 +15,7 @@ const Hero = () => {
             <div className="mt-8 flex flex-col items-center md:h-20 md:flex-row">
               <button
                 type="button"
-                className="mr-4 inline-block h-16 w-40 rounded-lg bg-teal-300 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg md:h-20 md:min-w-[200px]"
+                className="mr-4 inline-block h-16 w-40 rounded-lg from-white1 to-white2 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-lg transition duration-300 ease-in-out hover:bg-purple-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg md:h-20 md:min-w-[200px] md:bg-gradient-to-r md:text-xl"
               >
                 Explore
               </button>

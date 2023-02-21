@@ -4,7 +4,12 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 let boxVariant = {
-  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 1.5 } },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    x: 0,
+    transition: { duration: 1.5 },
+  },
   hidden: { opacity: 0, scale: 1, x: 100 },
 };
 
@@ -15,7 +20,12 @@ const AnimatedRoadmapCard = ({ info, cardTitle }) => {
   const isMobile = window.innerWidth < 768;
   if (isMobile) {
     boxVariant = {
-      visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 1.5 } },
+      visible: {
+        opacity: 1,
+        scale: 1,
+        x: 0,
+        transition: { duration: 1.5 },
+      },
       hidden: { opacity: 0, scale: 0.5, x: 0 },
     };
   }

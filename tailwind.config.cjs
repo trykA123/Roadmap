@@ -12,7 +12,7 @@ module.exports = {
       backgroundImage: {
         "cyber-punk":
           "bg-gradient-to-b from-teal-300 via yellow-500 to violet-800",
-        hero: "url('../src/assets/space.jpg')",
+        hero: "url('../src/assets/background.png')",
       },
       borderColor: {
         v1: "#5b21b6",
@@ -28,6 +28,13 @@ module.exports = {
         hero50: "rgba(7,7,7,0)",
         hero100: "rgba(7,7,7,0.57)",
         hero200: "rgba(7,7,7,1)",
+        "my-blue": "#0D2F7C",
+        "my-purple": "#662D91",
+        "my-green": "#3CB371",
+        "my-red": "#F44336",
+        "my-black": "#000000",
+        white1: "rgba(255, 255, 255, 0.05)",
+        white2: "rgba(255,255,255, 0.4)",
       },
       gridTemplateColumns: {
         20: "repeat(20, minmax(0, 1fr))",

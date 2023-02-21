@@ -15,12 +15,12 @@ const Box = ({ title, first, second, third, forth }) => {
         </div>
         <div className="flex"></div>
         <div className="overflox-visible mt-0">
-          <AnimatedRoadmapCard info={first} />
-          <AnimatedRoadmapCard info={second} />
-          <AnimatedRoadmapCard info={third} />
-          {title === titles.Q1 && <AnimatedRoadmapCard info={forth} />}
-          {title === titles.Q2 && <AnimatedRoadmapCard info={forth} />}
-          {title === titles.Q3 && <AnimatedRoadmapCard info={forth} />}
+          <AnimatedRoadmapCard info={first.info} cardTitle={first.title} />
+          <AnimatedRoadmapCard info={second.info} cardTitle={second.title} />
+          <AnimatedRoadmapCard info={third.info} cardTitle={third.title} />
+          {title !== titles.Q4 && (
+            <AnimatedRoadmapCard info={forth.info} cardTitle={forth.title} />
+          )}
         </div>
       </div>
     </div>
