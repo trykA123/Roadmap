@@ -6,7 +6,10 @@ const Project = () => {
   const [ref, inView] = useInView({});
 
   return (
-    <section className="h-screen bg-black md:py-72" id="Project">
+    <section
+      className="h-screen overflow-hidden bg-black md:py-72"
+      id="Project"
+    >
       <div className="flex h-full w-full items-center justify-center md:mx-auto">
         <motion.div
           className="relative top-0 z-10"
