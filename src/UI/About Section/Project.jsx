@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import backgroundUrl from "../../assets/ProjectRoboBackground.png";
+import robotUrl from "../../assets/Project.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -19,7 +21,7 @@ const Project = () => {
           transition={{ duration: 1.5 }}
         >
           <img
-            src="/src/assets/ProjectRoboBackground.png"
+            src={backgroundUrl}
             alt=""
             className="h-full w-full object-contain"
           />
@@ -31,7 +33,7 @@ const Project = () => {
             transition={{ duration: 1.3 }}
           >
             <img
-              src="/src/assets/Project.png"
+              src={robotUrl}
               alt=""
               className="h-full w-full object-contain"
             />
