@@ -49,7 +49,7 @@ const AnimatedRoadmapCard = ({ info, cardTitle }) => {
         <h2 className="static mr-2 flex min-w-fit max-w-full justify-start py-2 px-1 font-orbitronBold text-base font-light text-white lg:py-4 lg:px-5 lg:text-4xl">
           {cardTitle}
         </h2>
-        <p className="static mr-2 flex min-w-fit max-w-full justify-start py-2 px-1 font-mono text-base font-light text-white lg:py-4 lg:px-5 lg:text-xl">
+        <p className="static mr-2 flex min-w-fit max-w-full justify-start py-2 px-1 text-base font-light text-white lg:py-4 lg:px-5 lg:text-xl">
           {info}
         </p>
       </motion.div>

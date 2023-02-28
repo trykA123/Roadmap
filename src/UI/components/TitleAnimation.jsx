@@ -28,7 +28,7 @@ const TitleAnimation = ({ title }) => {
   }, [control, inView]);
   return (
     <motion.h1
-      className="py-12 text-center text-3xl md:mb-20 md:py-24 md:text-7xl"
+      className="py-12 text-3xl md:mx-auto md:mb-20 md:w-[70%] md:py-24 md:text-left md:text-7xl"
       variants={titleVariant}
       animate={control}
       initial="hidden"

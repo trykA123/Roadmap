@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import TeamMember from "./TeamMember";
 import { members } from "../../utils/constants";

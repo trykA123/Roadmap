@@ -22,18 +22,18 @@ const LoadingPage = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 z-50 flex h-screen w-screen items-center justify-center bg-black"
+      className="over fixed top-0 left-0 z-50 flex h-screen w-screen items-center justify-center bg-black"
       style={styles}
     >
       <div className="text-white">
         <p className="drop-shadow-5xl mb-8 text-2xl xl:text-8xl">
           <TypeAnimation
             sequence={[
-              ".", // Types 'One'
+              ".", // Types '.'
               500, // Waits 1s
-              "..", // Deletes 'One' and types 'Two'
+              "..", // Deletes '.' and types '..'
               500, // Waits 2s
-              "...", // Types 'Three' without deleting 'Two'
+              "...", // Types '...' without deleting 'Two'
               1000,
               "...initializing",
             ]}

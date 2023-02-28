@@ -8,6 +8,8 @@ module.exports = {
         orbitronBlack: "OrbitronBlack",
         orbitronBold: "OrbitronBold",
         orbitronRegular: "orbitronRegular",
+        RobotoBlack: "RobotoBlack",
+        RobotoLight: "RobotoLight",
       },
       backgroundImage: {
         "cyber-punk":

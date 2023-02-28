@@ -19,7 +19,7 @@ const WritingText = () => {
   }, []);
 
   return (
-    <p className="hidden font-sans leading-3 text-white md:block md:h-16 md:max-w-2xl md:text-base">
+    <p className="hidden leading-3 text-white md:block md:h-16 md:max-w-2xl md:text-base">
       {text}
     </p>
   );

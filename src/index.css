@@ -10,6 +10,12 @@
   scroll-behavior: smooth;
 }
 
+@layer base {
+  p {
+    font-family: RobotoLight;
+  }
+}
+
 // Background Gradients
 
 .gradient {
@@ -118,6 +124,16 @@
 @font-face {
   font-family: "OrbitronRegular";
   src: url("../src/fonts/Orbitron-Regular.ttf");
+}
+
+@font-face {
+  font-family: "RobotoBlack";
+  src: url("../src/fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../src/fonts/Roboto-Light.ttf");
 }
 
 /* Hamburger Menu */

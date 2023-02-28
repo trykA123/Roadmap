@@ -13,7 +13,7 @@ function App() {
     <div>
       <LoadingPage />
       <Hero />
-      <section className="h-[300px] bg-gradient-to-b from-hero50 via-hero100 to-hero200"></section>
+      {/* <section className="h-[300px] bg-gradient-to-b from-hero50 via-hero100 to-hero200"></section> */}
       <Project />
       <Market />
       <Events />

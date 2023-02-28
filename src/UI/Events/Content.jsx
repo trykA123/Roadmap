@@ -16,10 +16,10 @@ const Content = ({ activeTab }) => {
         </div>
       )}
       <div className="row-start-3 mx-auto px-12">
-        <h3 className="mb-4 text-3xl text-white lg:pt-12">
+        <h3 className="mx-auto mb-4 text-center text-3xl text-white lg:pt-12">
           {activeContent.title}
         </h3>
-        <p className="w-[80%] font-mono text-white">
+        <p className="mx-auto w-[80%] text-white">
           {activeContent.description}
         </p>
       </div>
