@@ -23,10 +23,10 @@ const Project = () => {
           <img
             src={backgroundUrl}
             alt=""
-            className="h-full w-full object-contain"
+            className="h-full w-full object-cover"
           />
           <motion.div
-            className="absolute -top-[34%] -right-36 z-20"
+            className="absolute -top-[34%] -right-[8%] z-20"
             ref={ref}
             initial={{ opacity: 0, translateX: 400 }}
             animate={inView ? { opacity: 1, translateX: 0 } : {}}
@@ -35,14 +35,14 @@ const Project = () => {
             <img
               src={robotUrl}
               alt=""
-              className="h-full w-full object-contain"
+              className="w-1/2 object-contain lg:w-3/4 xl:h-3/4 xl:w-full"
             />
           </motion.div>
           <motion.div
             className="absolute top-1/4 left-[5%] z-20 w-[40%]"
             ref={ref}
-            initial={{ opacity: 0, translateX: -300 }}
-            animate={inView ? { opacity: 1, translateX: 0 } : {}}
+            initial={{ opacity: 0, translateY: 300 }}
+            animate={inView ? { opacity: 1, translateY: 0 } : {}}
             transition={{ duration: 1.3 }}
           >
             <p className="text-base text-white">
