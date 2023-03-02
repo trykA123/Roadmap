@@ -34,6 +34,7 @@ const Navbar = () => {
     aElements.forEach((a) => {
       a.addEventListener("mouseover", () => hoverAnimation(a));
       a.addEventListener("mouseleave", () => (a.innerText = a.dataset.value));
+      a.innerText = a.dataset.value; // set default text
     });
 
     return () => {
@@ -48,7 +49,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed z-30 h-screen w-screen text-white">
+    <div className="fixed z-30 hidden h-screen w-screen text-white md:block">
       <ul className="flex h-full w-32 cursor-pointer flex-col justify-center gap-10 pl-10">
         <li>
           <a href="#hero" data-value="Home">
