@@ -10,7 +10,7 @@ const Team = () => {
 
   return (
     <div>
-      <section className="min-h-screen overflow-hidden bg-black" id="Team">
+      <section className="min-h-screen overflow-hidden bg-black" id="team">
         <div className="container mx-auto max-w-[70%] px-6 py-12 lg:py-96">
           <motion.h1
             className="text-center text-2xl font-bold uppercase text-white lg:pb-48 lg:text-7xl"

@@ -1,51 +1,87 @@
-import React from "react";
-import { useState } from "react";
-
-let menuState = {
-  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 1 } },
-  hidden: { opacity: 0, scale: 1, x: 100 },
-};
+import React, { useEffect } from "react";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => setIsOpen(!isOpen);
+  useEffect(() => {
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let interval = null;
+
+    const hoverAnimation = (a) => {
+      let iteration = 0;
+
+      clearInterval(interval);
+
+      interval = setInterval(() => {
+        a.innerText = a.dataset.value
+          .split("")
+          .map((_, index) => {
+            if (index < iteration) {
+              return a.dataset.value[index];
+            }
+
+            return letters[Math.floor(Math.random() * 26)];
+          })
+          .join("");
+
+        if (iteration >= a.dataset.value.length) {
+          clearInterval(interval);
+        }
+
+        iteration += 1 / 3;
+      }, 30);
+    };
+
+    const aElements = document.querySelectorAll("li a");
+    aElements.forEach((a) => {
+      a.addEventListener("mouseover", () => hoverAnimation(a));
+      a.addEventListener("mouseleave", () => (a.innerText = a.dataset.value));
+      a.innerText = a.dataset.value; // set default text
+    });
+
+    return () => {
+      aElements.forEach((a) => {
+        a.removeEventListener("mouseover", () => hoverAnimation(a));
+        a.removeEventListener(
+          "mouseleave",
+          () => (a.innerText = a.dataset.value)
+        );
+      });
+    };
+  }, []);
+
   return (
-    <div className="flex items-center justify-between font-bold text-white">
-      <h1 className="md:text-4xl">Space Robots</h1>
-      <div className="">
-        <button
-          type="button"
-          className={`hamburger z-40 block focus:outline-none ${
-            isOpen ? "active" : ""
-          }`}
-          onClick={toggleMenu}
-        >
-          <span className="hamburger-top"></span>
-          <span className="hamburger-middle"></span>
-          <span className="hamburger-bottom"></span>
-        </button>
-      </div>
-      <div
-        className={`absolute top-0 bottom-0 right-0 z-[2] min-h-screen w-96 flex-col space-y-3 self-end bg-black py-1 pt-40 pl-12 text-center text-3xl uppercase text-white lg:bg-transparent ${
-          isOpen ? "flex origin-right overflow-hidden" : "hidden"
-        }`}
-      >
-        <a className="hover:text-pink-500" href="#">
-          Dapp
-        </a>
-        <a className="" href="#">
-          Project
-        </a>
-        <a className="hover:text-pink-500" href="#Roadmap">
-          Roadmap
-        </a>
-        <a className="hover:text-pink-500" href="#Team">
-          Team
-        </a>
-        <a className="hover:text-pink-500" href="#">
-          Blog
-        </a>
-      </div>
+    <div className="fixed z-30 hidden h-screen w-screen text-white md:block">
+      <ul className="flex h-full w-32 cursor-pointer flex-col justify-center gap-10 pl-10">
+        <li>
+          <a href="#hero" data-value="Home">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#project" data-value="Project">
+            Project
+          </a>
+        </li>
+        <li>
+          <a href="#market" data-value="Market">
+            Market
+          </a>
+        </li>
+        <li>
+          <a href="#events" data-value="Events">
+            Events
+          </a>
+        </li>
+        <li>
+          <a href="#roadmap" data-value="Roadmap">
+            Roadmap
+          </a>
+        </li>
+        <li>
+          <a href="#team" data-value="Team">
+            Team
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };

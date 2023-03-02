@@ -5,7 +5,7 @@ import Content from "./Content";
 const Events = () => {
   const [activeTab, setActiveTab] = useState(1);
   return (
-    <section className="min-h-screen bg-black lg:h-[2000px]">
+    <section className="min-h-screen bg-black lg:h-[2000px]" id="events">
       <div className="h-full overflow-hidden pb-24 pt-12">
         <div className="flex items-center justify-center py-12 lg:pt-36">
           <h1 className="text-2xl text-white lg:text-7xl">Events</h1>

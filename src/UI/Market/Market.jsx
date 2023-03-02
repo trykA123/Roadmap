@@ -10,7 +10,10 @@ import TitleAnimation from "../components/TitleAnimation";
 const Market = () => {
   const [active, setActive] = useState("slide-2");
   return (
-    <section className="relative block h-full overflow-hidden bg-black pb-72 text-white">
+    <section
+      id="market"
+      className="relative block h-full overflow-hidden bg-black pb-72 text-white"
+    >
       <TitleAnimation title="Market" />
       <motion.div
         variants={staggerContainer}

@@ -11,7 +11,7 @@ import {
 const Roadmap = () => {
   return (
     <div>
-      <section id="Roadmap" className="relative block min-h-0">
+      <section id="roadmap" className="relative block min-h-0">
         <div className="mb-0 bg-black pb-0">
           <div className="mx-auto min-w-fit lg:max-w-[80%]">
             <div className="flex items-center justify-center py-12 lg:py-36">
