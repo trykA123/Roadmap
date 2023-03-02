@@ -47,7 +47,7 @@ const Team = () => {
                 {i % 2 === 0 ? (
                   <TeamMember members={member} />
                 ) : (
-                  <TeamMember members={member} className={"md:mt-32"} />
+                  <TeamMember members={member} className={"xl:mt-32"} />
                 )}
               </motion.div>
             ))}

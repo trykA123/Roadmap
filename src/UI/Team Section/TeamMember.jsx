@@ -6,10 +6,10 @@ const TeamMember = ({ members, className }) => {
   return (
     <div>
       <div
-        className={`group ${className} flex max-w-[300px] transform cursor-pointer flex-col items-center rounded-t-md transition duration-300 md:hover:scale-110 md:hover:bg-slate-200`}
+        className={`group ${className} flex transform cursor-pointer flex-col items-center rounded-t-md transition duration-300 md:max-w-[230px] md:hover:scale-110 md:hover:bg-slate-200`}
       >
         <img
-          className="max-w-[300px] rounded-t-md object-cover"
+          className="rounded-t-md object-cover md:max-w-[230px]"
           src={members.image}
           alt={members.name}
         />

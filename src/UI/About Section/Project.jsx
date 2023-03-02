@@ -12,7 +12,7 @@ const Project = () => {
       className="h-screen overflow-hidden bg-black md:py-72"
       id="Project"
     >
-      <div className="flex h-full w-full items-center justify-center md:mx-auto">
+      <div className="mx-auto flex h-full w-full items-center justify-center">
         <motion.div
           className="relative top-0 z-10"
           ref={ref}
@@ -23,10 +23,10 @@ const Project = () => {
           <img
             src={backgroundUrl}
             alt=""
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover md:visible"
           />
           <motion.div
-            className="absolute -top-[34%] -right-[8%] z-20"
+            className="absolute z-20 md:-top-[15%] md:-right-[93%] lg:-top-[15%] lg:-right-[60%] xl:-right-[30%] xl:-top-[29%] 2xl:-top-[34%] 2xl:-right-[8%]"
             ref={ref}
             initial={{ opacity: 0, translateX: 400 }}
             animate={inView ? { opacity: 1, translateX: 0 } : {}}
@@ -35,7 +35,7 @@ const Project = () => {
             <img
               src={robotUrl}
               alt=""
-              className="w-1/2 object-contain lg:w-3/4 xl:h-3/4 xl:w-full"
+              className="object-cover md:w-2/5 xl:w-3/4 2xl:w-full"
             />
           </motion.div>
           <motion.div
