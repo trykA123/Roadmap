@@ -10,7 +10,7 @@ const Project = () => {
   return (
     <section
       className="h-screen overflow-hidden bg-black md:py-72"
-      id="Project"
+      id="project"
     >
       <div className="mx-auto flex h-full w-full items-center justify-center">
         <motion.div

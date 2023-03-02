@@ -6,12 +6,15 @@ import Project from "./UI/About Section/Project";
 import Market from "./UI/Market/Market";
 import Events from "./UI/Events/Events";
 import LoadingPage from "./UI/components/LoadingPage";
+import Navbar from "./UI/Home Section/Navbar";
+
 import "./index.css";
 
 function App() {
   return (
     <div>
       <LoadingPage />
+      <Navbar />
       <Hero />
       {/* <section className="h-[300px] bg-gradient-to-b from-hero50 via-hero100 to-hero200"></section> */}
       <Project />
